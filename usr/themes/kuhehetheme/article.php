@@ -1,5 +1,5 @@
 <?php while($this->next()): ?>
-<?php if ($this->fields->showzy == 1): ?>
+
 <?php if ($this->fields->mode === "半图") : ?>
 
 <a class="post-card post photo" href="<?php $this->permalink() ?>">
@@ -99,5 +99,5 @@
 </article>
 </a>
 <?php endif; ?>
-<?php endif; ?>
+
 <?php endwhile; ?>

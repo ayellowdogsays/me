@@ -62,7 +62,7 @@ if ($this->is('single')) {
 
 <div class="text subtitle">
 <?php if ($this->fields->subtitle()): ?>
-<?php $this->fields->subtitle(); ?>
+<?php echo  $this->fields->subtitle(); ?>
 <?php endif; ?>
 </div>        
       </div>
@@ -87,7 +87,7 @@ if ($this->is('single')) {
 
 <?php if (is_array($this->options->sidebarBlock) && in_array('Showhuanying3', $this->options->sidebarBlock)): ?>
 <div class="tp-ad-text1">
-<?php $this->options->文章广告(); ?>
+<?php echo $this->options->文章广告(); ?>
 </div>
 <?php endif; ?>
 

@@ -124,7 +124,6 @@ if(0!==$(".joe_post__ad .swiper-container").length){let e="vertical";new Swiper(
 
 </style>
 
-
 <?php if ($this->is('single') && isset($this->fields->headcode)): ?>
     <?php echo $this->fields->headcode; ?>
 <?php endif; ?>

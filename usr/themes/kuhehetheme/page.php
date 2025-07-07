@@ -90,7 +90,7 @@ if ($this->is('single')) {
 </h1>
 <div class="text subtitle">
 <?php if ($this->fields->subtitle()): ?>
-<?php $this->fields->subtitle(); ?>
+<?php echo $this->fields->subtitle(); ?>
 <?php endif; ?>
 </div> 
       </div>

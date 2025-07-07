@@ -113,7 +113,7 @@ else{echo $str2;}
 
 <article class="md-text content" id="hh">
 
-
+<center><h4 style="color:var(--text)" id="comments">评论区</h4></center>
 
 
 
@@ -234,7 +234,7 @@ else{echo $str2;}
 
 <?php if ($comments->have()) : ?>
 <!-- 评论头部提示信息 -->
-<center><h4 style="color:var(--text)" id="comments"><?php $this->commentsNum(_t('暂无评论'), _t('仅有一条评论'), _t('已有 %d 条评论')); ?></h4></center>
+<center><h4 style="color:var(--text)"><?php $this->commentsNum(_t('暂无评论'), _t('仅有一条评论'), _t('已有 %d 条评论')); ?></h4></center>
         <!-- 评论的内容 -->
 <div class="tag-plugin timeline ds-fcircle" id="comment-container">
 <?php $comments->listComments(); ?>

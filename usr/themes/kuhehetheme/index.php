@@ -12,9 +12,12 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
 
 
+
 /** 文章置顶 */
 $sticky = $this->options->zd; //置顶的文章id，多个用|隔开
 if($sticky){
+
+
     $sticky_cids = explode('|',$sticky); //分割文本
     $sticky_html = "<span style='color:#fff;padding: .1rem .25rem;font-size:inherit;border-radius: .25rem;background-color:#f00;'>置顶</span>&nbsp"; //置顶标题的 html
 
@@ -47,7 +50,9 @@ if($sticky){
     $sticky_posts = $db->fetchAll($select2->order('table.contents.created', Typecho_Db::SORT_DESC)->page($this->_currentPage, $this->parameter->pageSize));
     foreach($sticky_posts as $sticky_post) $this->push($sticky_post); //压入列队
     $this->setTotal($this->getTotal()-count($sticky_cids)); //置顶文章不计算在所有文章内
-}
+
+
+}  
 
 
 

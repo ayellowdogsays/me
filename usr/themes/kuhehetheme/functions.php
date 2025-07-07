@@ -16,15 +16,15 @@ function themeConfig($form)
     $form->addInput($logoUrl);
 
 
-$logo = new Typecho_Widget_Helper_Form_Element_Text('logo', null, null, _t('首页头像'), _t('显示在文章主页的头像'));
+$logo = new Typecho_Widget_Helper_Form_Element_Text('logo', null, '', _t('首页头像'), _t('显示在文章主页的头像'));
     $form->addInput($logo);
 
-$name = new Typecho_Widget_Helper_Form_Element_Text('name', null, null, _t('主页昵称'), _t('显示在主页顶部的字，不填很难看'));
+$name = new Typecho_Widget_Helper_Form_Element_Text('name', null, '', _t('主页昵称'), _t('显示在主页顶部的字，不填很难看'));
     $form->addInput($name);
 
 
 
-$leftimg = new Typecho_Widget_Helper_Form_Element_Text('leftimg', null, null, _t('左边栏背景图片，必填'), _t('填写渐变图片链接，不填的话，会不丝滑和难看'));
+$leftimg = new Typecho_Widget_Helper_Form_Element_Text('leftimg', null, '', _t('左边栏背景图片，必填'), _t('填写渐变图片链接，不填的话，会不丝滑和难看'));
     $form->addInput($leftimg);
 
 
@@ -49,7 +49,7 @@ $logotxt2 = new \Typecho\Widget\Helper\Form\Element\Text(
     $form->addInput($logotxt2);
 
 
-$description = new Typecho_Widget_Helper_Form_Element_Text('description', null, null, _t('网站描述'), _t('网站的描述信息'));
+$description = new Typecho_Widget_Helper_Form_Element_Text('description', null, '', _t('网站描述'), _t('网站的描述信息'));
     $form->addInput($description);
 
     $sidebarBlock = new \Typecho\Widget\Helper\Form\Element\Checkbox(
@@ -89,7 +89,7 @@ $JADPost = new Typecho_Widget_Helper_Form_Element_Textarea(
 
 
 
-$emoji_links = new Typecho_Widget_Helper_Form_Element_Textarea('emoji_links', null, 3, _t('文章行内表情数据'), _t('写法比如：别名|表情链接'));
+$emoji_links = new Typecho_Widget_Helper_Form_Element_Textarea('emoji_links', null, '', _t('文章行内表情数据'), _t('写法比如：别名|表情链接'));
     $form->addInput($emoji_links);
 
 
@@ -135,44 +135,44 @@ $tagnumber = new \Typecho\Widget\Helper\Form\Element\Text(
 
 
 
-$leftbarshow = new Typecho_Widget_Helper_Form_Element_Textarea('leftbarshow', null, null, _t('左侧小组件'), _t('全站左侧小组件显示顺序，例如：Welcome2,RightButton,LeftWelcome,Navigation,tag,usercard'));
+$leftbarshow = new Typecho_Widget_Helper_Form_Element_Textarea('leftbarshow', null, '', _t('左侧小组件'), _t('全站左侧小组件显示顺序，例如：Welcome2,RightButton,LeftWelcome,Navigation,tag,usercard'));
     $form->addInput($leftbarshow);
 
 
-$rightbar = new Typecho_Widget_Helper_Form_Element_Textarea('rightbar', null, null, _t('右侧小组件'), _t('全站右侧小组件显示顺序，例如：Welcome2,RightButton,LeftWelcome,Navigation,tag,usercard'));
+$rightbar = new Typecho_Widget_Helper_Form_Element_Textarea('rightbar', null, '', _t('右侧小组件'), _t('全站右侧小组件显示顺序，例如：Welcome2,RightButton,LeftWelcome,Navigation,tag,usercard'));
     $form->addInput($rightbar);
 
 
 
-$侧边栏欢迎语 = new Typecho_Widget_Helper_Form_Element_Textarea('侧边栏欢迎语', null, null, _t('左侧边栏欢迎LeftWelcome'), _t('⭕️上面需开启开关才会显示，如果你不知道这个是啥，留着就好'));
+$侧边栏欢迎语 = new Typecho_Widget_Helper_Form_Element_Textarea('侧边栏欢迎语', null, '', _t('左侧边栏欢迎LeftWelcome'), _t('⭕️上面需开启开关才会显示，如果你不知道这个是啥，留着就好'));
     $form->addInput($侧边栏欢迎语);
 
 
-$xdhbt = new Typecho_Widget_Helper_Form_Element_Textarea('xdhbt', null, 3, _t('左侧欢迎语内容下按钮'), _t('小导航内容下按钮可以填在这里，比如'));
+$xdhbt = new Typecho_Widget_Helper_Form_Element_Textarea('xdhbt', null, '', _t('左侧欢迎语内容下按钮'), _t('小导航内容下按钮可以填在这里，比如'));
     $form->addInput($xdhbt);
 
 
-$leftnavnum = new Typecho_Widget_Helper_Form_Element_Text('leftnavnum', null, 3, _t('左侧小导航列数'), _t('一行显示几个，写1或2或3'));
+$leftnavnum = new Typecho_Widget_Helper_Form_Element_Text('leftnavnum', null, '', _t('左侧小导航列数'), _t('一行显示几个，写1或2或3'));
     $form->addInput($leftnavnum);
 
 
-$小导航内容 = new Typecho_Widget_Helper_Form_Element_Textarea('小导航内容', null, 3, _t('❌️左侧小导航内容'), _t('此项导航数据被下方代替，故弃用'));
+$小导航内容 = new Typecho_Widget_Helper_Form_Element_Textarea('小导航内容', null, '', _t('❌️左侧小导航内容'), _t('此项导航数据被下方代替，故弃用'));
     $form->addInput($小导航内容);
 
 
-$linkzu = new Typecho_Widget_Helper_Form_Element_Textarea('linkzu', null, 3, _t('左侧小导航链接数据Navigation'), _t('小导航内容可以填在这里，比如：链接文本1|链接1|这里写颜色color|图标1、可不填,链接文本2|链接2|这里写颜色color|图标2等等'));
+$linkzu = new Typecho_Widget_Helper_Form_Element_Textarea('linkzu', null, '', _t('左侧小导航链接数据Navigation'), _t('小导航内容可以填在这里，比如：链接文本1|链接1|这里写颜色color|图标1、可不填,链接文本2|链接2|这里写颜色color|图标2等等'));
     $form->addInput($linkzu);
 
 
 
 
-$右侧欢迎语 = new Typecho_Widget_Helper_Form_Element_Textarea('右侧欢迎语', null, null, _t('右侧欢迎语Welcome2'), _t('右侧栏想说什么，写在这里'));
+$右侧欢迎语 = new Typecho_Widget_Helper_Form_Element_Textarea('右侧欢迎语', null, '', _t('右侧欢迎语Welcome2'), _t('右侧栏想说什么，写在这里'));
     $form->addInput($右侧欢迎语);
 
 
 
 
-$右侧按钮 = new Typecho_Widget_Helper_Form_Element_Textarea('右侧按钮', null, null, _t('右侧按钮'), _t('这里是显示在右侧边栏的🍎按钮'));
+$右侧按钮 = new Typecho_Widget_Helper_Form_Element_Textarea('右侧按钮', null, '', _t('右侧按钮'), _t('这里是显示在右侧边栏的🍎按钮'));
     $form->addInput($右侧按钮);
 
 
@@ -190,11 +190,11 @@ $right1 = new Typecho_Widget_Helper_Form_Element_Select('right1', array(
     $form->addInput($right1);
 
 
-$sayleftn = new Typecho_Widget_Helper_Form_Element_Text('sayleftn', null, null, _t('侧边栏时间线动态显示条数timeline'), _t('直接写阿拉伯数字'));
+$sayleftn = new Typecho_Widget_Helper_Form_Element_Text('sayleftn', null, '', _t('侧边栏时间线动态显示条数timeline'), _t('直接写阿拉伯数字'));
     $form->addInput($sayleftn);
 
 
-$sayleftnn = new Typecho_Widget_Helper_Form_Element_Text('sayleftnn', null, null, _t('侧边栏时间线，对应动态文章的mid'), _t('直接写阿拉伯数字'));
+$sayleftnn = new Typecho_Widget_Helper_Form_Element_Text('sayleftnn', null, '', _t('侧边栏时间线，对应动态文章的mid'), _t('直接写阿拉伯数字'));
     $form->addInput($sayleftnn);
 
 
@@ -219,7 +219,7 @@ $首页友链 = new \Typecho\Widget\Helper\Form\Element\Textarea(
     $form->addInput($首页友链);
 
 
-$footer内容 = new Typecho_Widget_Helper_Form_Element_Textarea('footer内容', null, null, _t('底部内容'), _t('网站底部显示的文字内容，填写html标签'));
+$footer内容 = new Typecho_Widget_Helper_Form_Element_Textarea('footer内容', null, '', _t('底部内容'), _t('网站底部显示的文字内容，填写html标签'));
     $form->addInput($footer内容);
 
 
@@ -235,16 +235,16 @@ $articleCopyright = new Typecho_Widget_Helper_Form_Element_Select('articleCopyri
     ), 'show', _t('❌️显示原创声明'), _t('没用！开启后会在本篇文章底部显示版权声明。'));
     $form->addItem($articleCopyright);
 
-$文章广告 = new Typecho_Widget_Helper_Form_Element_Textarea('文章广告', null, null, _t('文章广告内容'), _t('这里写的文章广告，会显示在每篇文章顶部'));
+$文章广告 = new Typecho_Widget_Helper_Form_Element_Textarea('文章广告', null, '', _t('文章广告内容'), _t('这里写的文章广告，会显示在每篇文章顶部'));
     $form->addInput($文章广告);
 
 
 
-$footjs = new Typecho_Widget_Helper_Form_Element_Textarea('footjs', null, null, _t('自定义底部js内容'), _t('这里请直接填写js内容，不需要包裹'));
+$footjs = new Typecho_Widget_Helper_Form_Element_Textarea('footjs', null, '', _t('自定义底部js内容'), _t('这里请直接填写js内容，不需要包裹'));
     $form->addInput($footjs);
 
 
-$headcs = new Typecho_Widget_Helper_Form_Element_Textarea('headcs', null, null, _t('自定义头部css内容'), _t('这里请直接填写css内容，不需要包裹'));
+$headcs = new Typecho_Widget_Helper_Form_Element_Textarea('headcs', null, '', _t('自定义头部css内容'), _t('这里请直接填写css内容，不需要包裹'));
     $form->addInput($headcs);
 
 
@@ -288,11 +288,11 @@ $headerDisplay3 = new Typecho_Widget_Helper_Form_Element_Radio('headerDisplay3',
 
 
 
-$zdhxswz = new Typecho_Widget_Helper_Form_Element_Text('zdhxswz', null, null, _t('🍁页面左侧及顶部导航栏显示文字'), _t('页面显示在左侧导航栏时，显示的文字，防止页面标题字数太多而不好看，若想显示出某页面，此项必填'));
+$zdhxswz = new Typecho_Widget_Helper_Form_Element_Text('zdhxswz', null, '', _t('🍁页面左侧及顶部导航栏显示文字'), _t('页面显示在左侧导航栏时，显示的文字，防止页面标题字数太多而不好看，若想显示出某页面，此项必填'));
     $layout->addItem($zdhxswz);
 
 
-$subtitle = new Typecho_Widget_Helper_Form_Element_Textarea('subtitle', null, null, _t('🍁📝页面副标题'), _t('独立页面or文章副标题（一般用不到）'));
+$subtitle = new Typecho_Widget_Helper_Form_Element_Textarea('subtitle', null, '', _t('🍁📝页面副标题'), _t('独立页面or文章副标题（一般用不到）'));
     $layout->addItem($subtitle);
 
 
@@ -326,7 +326,7 @@ $showsay = new Typecho_Widget_Helper_Form_Element_Radio('showsay', array(
 
 
 
-$saysay = new Typecho_Widget_Helper_Form_Element_Textarea('saysay', null, null, _t('🍁💬说说显示最多条数'), _t('这里写纯数字'));
+$saysay = new Typecho_Widget_Helper_Form_Element_Textarea('saysay', null, '', _t('🍁💬说说显示最多条数'), _t('这里写纯数字'));
     $layout->addItem($saysay);
 
 
@@ -337,10 +337,10 @@ $saysaysay = new Typecho_Widget_Helper_Form_Element_Radio('saysaysay', array(
     $layout->addItem($saysaysay);
 
 
-$say1 = new Typecho_Widget_Helper_Form_Element_Textarea('say1', null, null, _t('🍁🈴合集页面指定字段'), _t('不同合集页面，这里写的东西不同'));
+$say1 = new Typecho_Widget_Helper_Form_Element_Textarea('say1', null, '', _t('🍁🈴合集页面指定字段'), _t('不同合集页面，这里写的东西不同'));
     $layout->addItem($say1);
 
-$say2 = new Typecho_Widget_Helper_Form_Element_Textarea('say2', null, null, _t('📝🈴显示在合集页面的文章的指定字段'), _t('这里要写想显示在的合集页面对应的自定义字段'));
+$say2 = new Typecho_Widget_Helper_Form_Element_Textarea('say2', null, '', _t('📝🈴显示在合集页面的文章的指定字段'), _t('这里要写想显示在的合集页面对应的自定义字段'));
     $layout->addItem($say2);
 
 
@@ -367,11 +367,11 @@ $say5 = new Typecho_Widget_Helper_Form_Element_Radio('say5', array(
 $showzy = new Typecho_Widget_Helper_Form_Element_Radio('showzy', array(
         '1' => _t('显示'),
         '0' => _t('不显示')
-    ), '1', _t('📝文章是否显示在主页'), _t('如果只想要文章作为合集，而不想它显示在首页，可以选择不显示，分类详情页面也不会显示了'));
+    ), '1', _t('❌📝文章是否显示在主页'), _t('如果只想要文章作为合集，而不想它显示在首页，可以选择不显示，分类详情页面也不会显示了'));
     $layout->addItem($showzy);
 
 
-    $zhaiyao = new Typecho_Widget_Helper_Form_Element_Textarea('zhaiyao', null, null, ('📝自定义文章摘要'), _t('你如果想自己写摘要，在这里写即可，显示到文章封面'));
+    $zhaiyao = new Typecho_Widget_Helper_Form_Element_Textarea('zhaiyao', null, '', ('📝自定义文章摘要'), _t('你如果想自己写摘要，在这里写即可，显示到文章封面'));
     $layout->addItem($zhaiyao);  //  注册
 
 
@@ -381,7 +381,7 @@ $banner = new Typecho_Widget_Helper_Form_Element_Select('banner', array(
     ), 'hide', _t('🍁📝显示文章or页面banner头图'), _t('开启后显示文章顶部图片，若开启，请填写下方头图链接'));
     $layout->addItem($banner);
 
-    $image = new Typecho_Widget_Helper_Form_Element_Text('image', null, null, ('🍁📝文章头图'), _t('文章头图会显示在文章的顶部，若选择显示头图，请填写'));
+    $image = new Typecho_Widget_Helper_Form_Element_Text('image', null, '', ('🍁📝文章头图'), _t('文章头图会显示在文章的顶部，若选择显示头图，请填写'));
     $layout->addItem($image);  //  注册
 
 $mode = new Typecho_Widget_Helper_Form_Element_Select(
@@ -398,11 +398,11 @@ $mode = new Typecho_Widget_Helper_Form_Element_Select(
     $layout->addItem($mode);
 
 
-$imghight = new Typecho_Widget_Helper_Form_Element_Text('imghight', null, null, _t('📝封面大图高度'), _t('手机端文章封面图高度🍎单位px，不填则为默认高度'));
+$imghight = new Typecho_Widget_Helper_Form_Element_Text('imghight', null, '', _t('📝封面大图高度'), _t('手机端文章封面图高度🍎单位px，不填则为默认高度'));
     $layout->addItem($imghight);
 
 
-$datu = new Typecho_Widget_Helper_Form_Element_Text('datu', null, null, _t('📝文章封面大图链接'), _t('文章封面图半图和大图模式均使用此作为封面'));
+$datu = new Typecho_Widget_Helper_Form_Element_Text('datu', null, '', _t('📝文章封面大图链接'), _t('文章封面图半图和大图模式均使用此作为封面'));
     $layout->addItem($datu);  
 
 
@@ -420,7 +420,7 @@ $datutitleshow = new Typecho_Widget_Helper_Form_Element_Radio('datutitleshow', a
     $layout->addItem($datutitleshow);
 
 
-$datutitle = new Typecho_Widget_Helper_Form_Element_Text('datutitle', null, null, _t('📝大图显示大标题'), _t('文章封面图大标题🍎大图模式可用'));
+$datutitle = new Typecho_Widget_Helper_Form_Element_Text('datutitle', null, '', _t('📝大图显示大标题'), _t('文章封面图大标题🍎大图模式可用'));
     $layout->addItem($datutitle); 
 
 
@@ -432,32 +432,32 @@ $datuposition = new Typecho_Widget_Helper_Form_Element_Radio('datuposition', arr
 
 
 
-$datu1 = new Typecho_Widget_Helper_Form_Element_Text('datu1', null, null, _t('📝大图上文字'), _t('文章封面图上文字🍎大图模式可用'));
+$datu1 = new Typecho_Widget_Helper_Form_Element_Text('datu1', null, '', _t('📝大图上文字'), _t('文章封面图上文字🍎大图模式可用'));
     $layout->addItem($datu1); 
 
-$datu2 = new Typecho_Widget_Helper_Form_Element_Text('datu2', null, null, _t('📝大图下文字'), _t('文章封面图🍎大图模式可用'));
+$datu2 = new Typecho_Widget_Helper_Form_Element_Text('datu2', null, '', _t('📝大图下文字'), _t('文章封面图🍎大图模式可用'));
     $layout->addItem($datu2);
 
 
-$tagcolor = new Typecho_Widget_Helper_Form_Element_Text('tagcolor', null, null, _t('📝文章底部标签颜色'), _t('请写：green、red等等类似颜色，不填则为默认无色'));
+$tagcolor = new Typecho_Widget_Helper_Form_Element_Text('tagcolor', null, '', _t('📝文章底部标签颜色'), _t('请写：green、red等等类似颜色，不填则为默认无色'));
     $layout->addItem($tagcolor);
 
 
 
 
-$rightnotice = new Typecho_Widget_Helper_Form_Element_Textarea('rightnotice', null, null, _t('📝文章右侧栏提示文字'), _t('这里请填写html标签，markdown不可用，所以想换行请用换行的br标签'));
+$rightnotice = new Typecho_Widget_Helper_Form_Element_Textarea('rightnotice', null, '', _t('📝文章右侧栏提示文字'), _t('这里请填写html标签，markdown不可用，所以想换行请用换行的br标签'));
     $layout->addItem($rightnotice);
 
 
-$mdbimg = new Typecho_Widget_Helper_Form_Element_Text('mdbimg', null, null, _t('🍎🍁针对没顶部页面的顶部图片'), _t('仅针对应用没顶部页面模板，普通文章不要动这里'));
+$mdbimg = new Typecho_Widget_Helper_Form_Element_Text('mdbimg', null, '', _t('🍎🍁针对没顶部页面的顶部图片'), _t('仅针对应用没顶部页面模板，普通文章不要动这里'));
     $layout->addItem($mdbimg);
 
 
-$mdbtitle = new Typecho_Widget_Helper_Form_Element_Text('mdbtitle', null, null, _t('🍎🍁没顶部页面的显示标题'), _t('🍎仅针对应用没顶部页面模板，普通文章不要动这里'));
+$mdbtitle = new Typecho_Widget_Helper_Form_Element_Text('mdbtitle', null, '', _t('🍎🍁没顶部页面的显示标题'), _t('🍎仅针对应用没顶部页面模板，普通文章不要动这里'));
     $layout->addItem($mdbtitle);
 
 
-$mdbbt = new Typecho_Widget_Helper_Form_Element_Textarea('mdbbt', null, null, _t('🍎🍁针对没顶部页面跳转按钮'), _t('仅针对没顶部页面🍎这里是显示右上角跳转按钮'));
+$mdbbt = new Typecho_Widget_Helper_Form_Element_Textarea('mdbbt', null, '', _t('🍎🍁针对没顶部页面跳转按钮'), _t('仅针对没顶部页面🍎这里是显示右上角跳转按钮'));
     $layout->addItem($mdbbt);
 
 
@@ -508,7 +508,7 @@ $isright = new Typecho_Widget_Helper_Form_Element_Radio('isright',
 
 
 
-$headcode = new Typecho_Widget_Helper_Form_Element_Textarea('headcode', null, null, _t('📝🍁自定义插入head头部代码'), _t('一般不用填'));
+$headcode = new Typecho_Widget_Helper_Form_Element_Textarea('headcode', null, '', _t('📝🍁自定义插入head头部代码'), _t('一般不用填'));
     $layout->addItem($headcode);
 
 
@@ -533,7 +533,7 @@ $isleftshow = new Typecho_Widget_Helper_Form_Element_Radio('isleftshow',
     $layout->addItem($isleftshow);
 
 
-$leftorder = new Typecho_Widget_Helper_Form_Element_Textarea('leftorder', null, null, _t('📝🍁左侧自定义组件显示顺序'), _t('请输入显示顺序，例如：Welcome2,RightButton,LeftWelcome'));
+$leftorder = new Typecho_Widget_Helper_Form_Element_Textarea('leftorder', null, '', _t('📝🍁左侧自定义组件显示顺序'), _t('请输入显示顺序，例如：Welcome2,RightButton,LeftWelcome'));
     $layout->addItem($leftorder);
 
 
@@ -544,7 +544,7 @@ $isrightshow = new Typecho_Widget_Helper_Form_Element_Radio('isrightshow',
     $layout->addItem($isrightshow);
 
 
-$functionorder = new Typecho_Widget_Helper_Form_Element_Textarea('functionorder', null, null, _t('📝🍁右侧新增自定义组件显示顺序'), _t('开关开启后，请输入显示顺序，例如：Welcome2,RightButton,LeftWelcome'));
+$functionorder = new Typecho_Widget_Helper_Form_Element_Textarea('functionorder', null, '', _t('📝🍁右侧新增自定义组件显示顺序'), _t('开关开启后，请输入显示顺序，例如：Welcome2,RightButton,LeftWelcome'));
     $layout->addItem($functionorder);
 
 
@@ -1338,7 +1338,7 @@ function generatefooter2() {
     
     // 检查配置有效性
     if (!$options || !isset($options->项目)) {
-        echo "自定义字段 项目 未配置";
+        echo "项目 未配置";
         return;
     }
     
@@ -1384,7 +1384,7 @@ function generatefooter3() {
 
     // 检查配置有效性
     if (!$options || !isset($options->首页友链)) {
-        echo "自定义字段 首页友链 未配置";
+        echo "首页友链 未配置";
         return;
     }
 
